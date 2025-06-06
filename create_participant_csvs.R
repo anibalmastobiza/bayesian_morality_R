@@ -1,5 +1,3 @@
-New
-+39-0
 library(dplyr)
 library(readr)
 library(purrr)
