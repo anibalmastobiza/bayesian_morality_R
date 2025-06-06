@@ -2,7 +2,7 @@ library(dplyr)
 library(readr)
 library(purrr)
 
-# Read vignettes.csv
+# Read vignettes.csv 
 vigs <- read_csv("vignettes.csv", show_col_types = FALSE)
 
 # Create output directory if it doesn't exist
@@ -32,7 +32,8 @@ for (pid in seq_len(200)) {
     slice_sample(n = 2)
 
   out <- bind_rows(ilow, ihigh, clow, chigh) %>%
-    slice_sample(n = n())
+  slice_sample(n = nrow(.))
+
 
   file_name <- file.path(out_dir, sprintf("participant_%03d.csv", pid))
   write_csv(out, file_name)
