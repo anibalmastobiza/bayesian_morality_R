@@ -1,5 +1,4 @@
-generate_vignettes.R
-+101-0
+
 library(dplyr)
 library(stringr)
 library(readr)
