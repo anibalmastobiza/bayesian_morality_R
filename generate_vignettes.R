@@ -4,6 +4,7 @@ library(readr)
 library(purrr)
 library(tibble)
 
+set.seed(123)  # ensure reproducibility
 # Template texts for the vignettes
 templates <- list(
   intentionalist_low = "Agent {Agent} deliberately performed an action knowing there was a {Prob} chance that exactly {Damage} innocent individuals would be harmed. {Agent}’s primary motivation was {Motivation}, and {Agent} was certain of the outcome.",
