@@ -1,0 +1,7 @@
+# Ignore generated data files
+vignettes.csv
+participant_csvs/
+
+# Common R user files
+.Rhistory
+.RData
